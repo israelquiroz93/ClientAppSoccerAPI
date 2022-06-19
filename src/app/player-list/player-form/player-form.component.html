@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Please enter the Players Info </h1>
+<div mat-dialog-content>
+    <form [formGroup]="newPlayerForm">
+      <mat-form-field>
+        <input matInput placeholder="Player Name" formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Jersey Number" formControlName="jerseyNumber">
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions class="space">
+    <button mat-raised-button color="warn" (click)="onNoClick()">Close</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Create</button>
+</div>
